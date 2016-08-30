@@ -16,6 +16,8 @@
 		FC06EAA81D743163009D9020 /* JSCoreTest_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC06EAA71D743163009D9020 /* JSCoreTest_1Tests.m */; };
 		FC06EAB31D743163009D9020 /* JSCoreTest_1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC06EAB21D743163009D9020 /* JSCoreTest_1UITests.m */; };
 		FC06EAC21D7432AE009D9020 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC06EAC11D7432AE009D9020 /* JavaScriptCore.framework */; };
+		FC5F686C1D75C57700DCC264 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F686B1D75C57700DCC264 /* RootViewController.m */; };
+		FC5F68701D75C59000DCC264 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F686F1D75C59000DCC264 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		FC06EAB41D743163009D9020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC06EAC01D743190009D9020 /* config.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.pch; sourceTree = "<group>"; };
 		FC06EAC11D7432AE009D9020 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FC5F686A1D75C57700DCC264 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FC5F686B1D75C57700DCC264 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FC5F686E1D75C59000DCC264 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FC5F686F1D75C59000DCC264 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +114,9 @@
 				FC06EA901D743163009D9020 /* AppDelegate.h */,
 				FC06EA911D743163009D9020 /* AppDelegate.m */,
 				FC06EAC01D743190009D9020 /* config.pch */,
-				FC06EA931D743163009D9020 /* ViewController.h */,
-				FC06EA941D743163009D9020 /* ViewController.m */,
+				FC5F68711D75C5B400DCC264 /* First */,
+				FC5F686D1D75C57F00DCC264 /* ROOT */,
+				FC5F68691D75C55800DCC264 /* Second */,
 				FC06EA961D743163009D9020 /* Main.storyboard */,
 				FC06EA991D743163009D9020 /* Assets.xcassets */,
 				FC06EA9B1D743163009D9020 /* LaunchScreen.storyboard */,
@@ -152,6 +159,33 @@
 			children = (
 			);
 			name = FrameWork;
+			sourceTree = "<group>";
+		};
+		FC5F68691D75C55800DCC264 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F686E1D75C59000DCC264 /* SecondViewController.h */,
+				FC5F686F1D75C59000DCC264 /* SecondViewController.m */,
+			);
+			name = Second;
+			sourceTree = "<group>";
+		};
+		FC5F686D1D75C57F00DCC264 /* ROOT */ = {
+			isa = PBXGroup;
+			children = (
+				FC5F686A1D75C57700DCC264 /* RootViewController.h */,
+				FC5F686B1D75C57700DCC264 /* RootViewController.m */,
+			);
+			name = ROOT;
+			sourceTree = "<group>";
+		};
+		FC5F68711D75C5B400DCC264 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				FC06EA931D743163009D9020 /* ViewController.h */,
+				FC06EA941D743163009D9020 /* ViewController.m */,
+			);
+			name = First;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +255,7 @@
 				TargetAttributes = {
 					FC06EA891D743163009D9020 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 628LRYYF8F;
 					};
 					FC06EAA21D743163009D9020 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -284,8 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5F68701D75C59000DCC264 /* SecondViewController.m in Sources */,
 				FC06EA951D743163009D9020 /* ViewController.m in Sources */,
 				FC06EA921D743163009D9020 /* AppDelegate.m in Sources */,
+				FC5F686C1D75C57700DCC264 /* RootViewController.m in Sources */,
 				FC06EA8F1D743163009D9020 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JSCoreTest-1/config.pch";
 				INFOPLIST_FILE = "JSCoreTest-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -439,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JSCoreTest-1/config.pch";
 				INFOPLIST_FILE = "JSCoreTest-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
