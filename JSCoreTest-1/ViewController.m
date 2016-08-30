@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIWebViewDelegate>
+{
+    //示例WebView
+    UIWebView *testWebView;
+}
 
 @end
 
@@ -16,12 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"ROOT PAGE";
+    [self initUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initUI
+{
+    testWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, kWidth, kHeight)];
+    testWebView.delegate = self;
+    NSString *urlString = @"http://172.16.205.108:8080/JSCoreTest/index.html";
+    [testWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
+    [self.view addSubview:testWebView];
 }
 
 @end
