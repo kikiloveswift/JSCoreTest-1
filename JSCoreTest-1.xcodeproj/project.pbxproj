@@ -17,6 +17,7 @@
 		FC06EAB31D743163009D9020 /* JSCoreTest_1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC06EAB21D743163009D9020 /* JSCoreTest_1UITests.m */; };
 		FC06EAC21D7432AE009D9020 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC06EAC11D7432AE009D9020 /* JavaScriptCore.framework */; };
 		FC336E481D76BEC5002CB7B2 /* JSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = FC336E471D76BEC4002CB7B2 /* JSBridge.m */; };
+		FC3A6E421D7B27B7006E2370 /* PersonRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3A6E411D7B27B7006E2370 /* PersonRunTime.m */; };
 		FC5F686C1D75C57700DCC264 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F686B1D75C57700DCC264 /* RootViewController.m */; };
 		FC5F68701D75C59000DCC264 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5F686F1D75C59000DCC264 /* SecondViewController.m */; };
 		FCAA783B1D780CA3000B9258 /* TestRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAA783A1D780CA3000B9258 /* TestRunTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -61,6 +62,8 @@
 		FC06EAC11D7432AE009D9020 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FC336E461D76BEC4002CB7B2 /* JSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBridge.h; sourceTree = "<group>"; };
 		FC336E471D76BEC4002CB7B2 /* JSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBridge.m; sourceTree = "<group>"; };
+		FC3A6E401D7B27B7006E2370 /* PersonRunTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonRunTime.h; sourceTree = "<group>"; };
+		FC3A6E411D7B27B7006E2370 /* PersonRunTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonRunTime.m; sourceTree = "<group>"; };
 		FC5F686A1D75C57700DCC264 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		FC5F686B1D75C57700DCC264 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		FC5F686E1D75C59000DCC264 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -180,6 +183,15 @@
 			name = Basic;
 			sourceTree = "<group>";
 		};
+		FC3A6E3F1D7B277D006E2370 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC3A6E401D7B27B7006E2370 /* PersonRunTime.h */,
+				FC3A6E411D7B27B7006E2370 /* PersonRunTime.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FC5F68691D75C55800DCC264 /* Second */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +201,7 @@
 				FCAA783A1D780CA3000B9258 /* TestRunTime.m */,
 				FCAA783C1D7816D7000B9258 /* CustomClass.h */,
 				FCAA783D1D7816D7000B9258 /* CustomClass.m */,
+				FC3A6E3F1D7B277D006E2370 /* Model */,
 			);
 			name = Second;
 			sourceTree = "<group>";
@@ -350,6 +363,7 @@
 				FC5F686C1D75C57700DCC264 /* RootViewController.m in Sources */,
 				FC06EA8F1D743163009D9020 /* main.m in Sources */,
 				FC336E481D76BEC5002CB7B2 /* JSBridge.m in Sources */,
+				FC3A6E421D7B27B7006E2370 /* PersonRunTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

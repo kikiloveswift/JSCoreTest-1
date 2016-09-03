@@ -37,7 +37,7 @@
 {
     testWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, kWidth, kHeight)];
     testWebView.delegate = self;
-    NSString *urlString = @"http://172.16.205.108:8080/JSCoreTest/index.html";
+    NSString *urlString = @"http://192.168.0.4:8080/JSCoreTest-1/index.html";
     [testWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
     [self.view addSubview:testWebView];
     
