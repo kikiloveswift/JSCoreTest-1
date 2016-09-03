@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FC06EAA21D743163009D9020"
-               BuildableName = "JSCoreTest-1Tests.xctest"
-               BlueprintName = "JSCoreTest-1Tests"
+               BlueprintIdentifier = "FC06EAAD1D743163009D9020"
+               BuildableName = "JSCoreTest-1UITests.xctest"
+               BlueprintName = "JSCoreTest-1UITests"
                ReferencedContainer = "container:JSCoreTest-1.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FC06EAAD1D743163009D9020"
-               BuildableName = "JSCoreTest-1UITests.xctest"
-               BlueprintName = "JSCoreTest-1UITests"
+               BlueprintIdentifier = "FC06EAA21D743163009D9020"
+               BuildableName = "JSCoreTest-1Tests.xctest"
+               BlueprintName = "JSCoreTest-1Tests"
                ReferencedContainer = "container:JSCoreTest-1.xcodeproj">
             </BuildableReference>
          </TestableReference>
