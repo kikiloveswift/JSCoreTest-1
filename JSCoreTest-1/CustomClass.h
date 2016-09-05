@@ -10,9 +10,13 @@
 
 @interface CustomClass : NSObject
 
+@property (nonatomic, copy)NSString *stringFun;
+
 /**
  *  测试输出
  */
 - (void)testLog;
+
+- (void)testFun;
 
 @end
