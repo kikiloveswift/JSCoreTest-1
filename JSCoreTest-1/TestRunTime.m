@@ -19,8 +19,13 @@
         
         //测试copy
         [self testObjc_Copy];
+        
         //测试addFunction
         [self addFunction];
+        
+        //测试获取全局变量
+        [self testGetAllInstance];
+        
     }
     return self;
 }
@@ -68,6 +73,16 @@ int cFunction(id self, SEL _cmd, NSString *str)
     int a = (int)[testClass ocMethod:@"我是一个OC的method，C函数实现"];
     NSLog(@"a:%d", a);
 
+}
+
+- (void)testGetAllInstance
+{
+    u_int count;
+    Ivar *instanceList = class_copyIvarList([CustomClass class], &count);
+    for (int i = 0; i < count; i++) {
+        struct objc_ivar *name = instanceList[i];
+        NSLog(@"name is %@",[NSString stringWithCString:name encoding:NSUTF8StringEncoding]);
+    }
 }
 
 

@@ -9,6 +9,11 @@
 #import "CustomClass.h"
 
 @implementation CustomClass
+{
+    int height_m;
+    
+    NSString *str_m;
+}
 
 - (void)testLog
 {
